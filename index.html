@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black-Jack Card Game</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+
+<body>
+    <div id="background"></div>
+    <div id = "bank">BANK : $ <span id="bank_dis">3000</span></div>
+    <div id="bet">BET : $ <span id="bet1">0</span></div>
+    <div id="dealer">
+        <div class="card" id="dcard1"><h1></h1><h2></h2><h3></h3></div>
+    
+        <div class="card" id="dcard2"><h1></h1><h2></h2><h3></h3></div>
+    
+        <div class="card" id="dcard3"><h1></h1><h2></h2><h3></h3></div>
+    
+        <div class="card" id="dcard4"><h1></h1><h2></h2><h3></h3></div>
+    
+        <div class="card" id="dcard5"> <h1></h1><h2></h2><h3></h3></div>
+    </div>
+    <div id="player">
+        <div class="card" id="pcard1"><h1></h1><h2></h2><h3></h3></div>
+    
+        <div class="card" id="pcard2"><h1></h1><h2></h2><h3></h3></div>
+    
+        <div class="card" id="pcard3"><h1></h1><h2></h2><h3></h3></div>
+    
+        <div class="card" id="pcard4"><h1></h1><h2></h2><h3></h3></div>
+    
+        <div class="card" id="pcard5"><h1></h1><h2></h2><h3></h3></div>
+    </div>
+    <div>
+        <button id="hit">HIT</button>
+        <button id="stand">STAND</button>
+        <button id="deal">DEAL</button>
+    </div>
+    <div>
+        <button id="_100" onclick="bet(100)">$100</button>
+        <button id="_200" onclick="bet(200)">$200</button>
+        <button id="_500" onclick="bet(500)">$500</button>
+    </div>    
+    <div id= "overlay_winner"></div>
+    <div id = "overlay"></div>
+    <p id="winner"></p>
+    <p id = "win_amount"></p>
+    <button id="new_game">NEW GAME</button>
+    <div id = "theme">BLACK JACK</div>
+    <script src="./js/gamelogic.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,397 @@
+body,
+html {
+  height: 100%;
+  margin: 0%;
+}
+
+.container {
+  height: 100%;
+  margin: 0%;
+}
+
+#overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  opacity: 1;
+  background-color: white;
+}
+
+#bank {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  width: 200px;
+  border-radius: 5px;
+  background-color: yellowgreen;
+}
+
+#bet {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  color: white;
+  width: 200px;
+  border-radius: 5px;
+  background-color: yellowgreen;
+}
+
+#overlay_winner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  opacity: 0.5;
+  background-color: white;
+}
+
+@keyframes back {
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: blue;
+  }
+
+  100% {
+    color: green;
+  }
+}
+
+#theme {
+  position: absolute;
+  top: 10px;
+  left: 440px;
+  font-size: 100px;
+  color: red;
+  animation-name: back;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+#winner {
+  position: absolute;
+  top: 300px;
+  left: 630px;
+  height: 150px;
+  width: 300px;
+  color: black;
+  opacity: 1;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+#win_amount {
+  position: absolute;
+  top: 200px;
+  left: 615px;
+  height: 150px;
+  width: 300px;
+  color: black;
+  opacity: 1;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+#new_game {
+  position: absolute;
+  top: 340px;
+  left: 700px;
+  height: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 20px;
+  background-color: lightblue;
+  color: black;
+  opacity: 1;
+}
+
+#new_game:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 0px 8px 16px 0px black;
+  transition: 0.5s;
+}
+
+#background {
+  background-image: url("../images/background.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+}
+
+.card {
+  position: absolute;
+  border-radius: 20px;
+}
+
+#pcard1 {
+  position: absolute;
+  width: 120px;
+  height: 180px;
+  border: 1px solid black;
+  left: 400px;
+  top: 200px;
+  transform: rotate(-55deg);
+  background-color: whitesmoke;
+}
+
+#pcard2 {
+  position: absolute;
+  width: 120px;
+  height: 180px;
+  left: 430px;
+  top: 190px;
+  transform: rotate(-37deg);
+  border: 1px solid black;
+  background-color: whitesmoke;
+}
+
+#pcard3 {
+  position: absolute;
+  width: 120px;
+  height: 180px;
+  left: 465px;
+  top: 190px;
+  transform: rotate(-13deg);
+  border: 1px solid black;
+  background-color: whitesmoke;
+}
+
+#pcard4 {
+  position: absolute;
+  width: 120px;
+  height: 180px;
+  left: 500px;
+  top: 210px;
+  transform: rotate(10deg);
+  border: 1px solid black;
+  background-color: whitesmoke;
+}
+
+#pcard5 {
+  position: absolute;
+  width: 120px;
+  height: 180px;
+  left: 520px;
+  top: 240px;
+  transform: rotate(30deg);
+  border: 1px solid black;
+  background-color: whitesmoke;
+}
+
+#dcard1 {
+  position: absolute;
+  width: 120px;
+  height: 180px;
+  left: 880px;
+  top: 200px;
+  transform: rotate(-55deg);
+  border: 1px solid black;
+  background-color: whitesmoke;
+}
+
+#dcard2 {
+  position: absolute;
+  width: 120px;
+  height: 180px;
+  left: 915px;
+  top: 190px;
+  transform: rotate(-37deg);
+  border: 1px solid black;
+  background-color: whitesmoke;
+}
+
+#dcard3 {
+  position: absolute;
+  width: 120px;
+  height: 180px;
+  left: 950px;
+  top: 190px;
+  transform: rotate(-13deg);
+  border: 1px solid black;
+  background-color: whitesmoke;
+}
+
+#dcard4 {
+  position: absolute;
+  width: 120px;
+  height: 180px;
+  left: 985px;
+  top: 210px;
+  transform: rotate(10deg);
+  border: 1px solid black;
+  background-color: whitesmoke;
+}
+
+#dcard5 {
+  position: absolute;
+  width: 120px;
+  height: 180px;
+  left: 1005px;
+  top: 240px;
+  transform: rotate(30deg);
+  border: 1px solid black;
+  background-color: whitesmoke;
+}
+
+h1 {
+  position: absolute;
+  top: -16px;
+  left: 3px;
+  font-size: xx-large;
+}
+
+h2 {
+  position: absolute;
+  font-size: 120px;
+  top: -90px;
+  left: 20px;
+}
+
+h3 {
+  position: absolute;
+  font-size: 25px;
+  top: 8px;
+  left: 5px;
+}
+#hit,
+#stand,
+#deal {
+  font-family: cursive;
+}
+
+@keyframes buttons {
+  0% {
+    border: red solid;
+  }
+
+  25% {
+    border: yellowgreen solid;
+  }
+
+  50% {
+    border: blue solid;
+  }
+
+  100% {
+    border: green solid;
+  }
+}
+
+@keyframes buttons1 {
+  0% {
+    border: red dashed;
+  }
+
+  25% {
+    border: black dashed;
+  }
+  50% {
+    border: blue dashed;
+  }
+
+  100% {
+    border: green dashed;
+  }
+}
+
+#hit {
+  position: absolute;
+  top: 600px;
+  left: 500px;
+  inline-size: auto;
+  block-size: auto;
+  font-size: x-large;
+  font-weight: bold;
+  border-radius: 20px;
+  animation-name: buttons;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  border: 5px red solid;
+}
+
+#stand {
+  position: absolute;
+  top: 600px;
+  left: 700px;
+  inline-size: auto;
+  block-size: auto;
+  font-size: x-large;
+  font-weight: bold;
+  border-radius: 20px;
+  animation-name: buttons;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  border: 5px red solid;
+}
+
+#deal {
+  position: absolute;
+  top: 600px;
+  left: 900px;
+  inline-size: auto;
+  block-size: auto;
+  font-size: x-large;
+  font-weight: bold;
+  border-radius: 20px;
+  animation-name: buttons;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  border: 5px red solid;
+}
+
+#_100 {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  border-radius: 70px;
+  top: 490px;
+  left: 130px;
+  font-size: large;
+  font-weight: bold;
+  border: 5px dashed green;
+  animation-name: buttons1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  background-color: burlywood;
+}
+
+#_200 {
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  border-radius: 90px;
+  top: 450px;
+  left: 20px;
+  font-size: large;
+  font-weight: bold;
+  animation-name: buttons1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  border: 5px dashed blue;
+  background-color: aqua;
+}
+
+#_500 {
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  border-radius: 110px;
+  top: 550px;
+  left: 20px;
+  font-size: x-large;
+  font-weight: bold;
+  animation-name: buttons1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  border: 5px dashed red;
+  background-color: firebrick;
+}
